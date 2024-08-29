@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text editor</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="/src/index.js"></script>
+    <div id="text-editor">
+    <nav>
+        <div id="button-text" onclick="">
+            <select name="Texto Normal" id="type-text">
+                <option value="texto-normal">Texto Normal</option>
+                <option value="titulo1">Título 1</option>
+                <option value="titulo2">Título 2</option>
+                <option value="titulo3">Título 3</option>
+                <option value="subtítulo">Subtítulo</option>
+            </select>
+        </div>
+        <button onclick="editor.bold()"><img src="/assets/format_bold_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="bold"></button>
+        <button onclick="editor.italico()"><img src="/assets/format_italic_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" id="italic" alt="" onclick=""></button>
+        <button onclick="editor.underlined()"><img src="/assets/format_underlined_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" id="underlined" alt="" onclick=""></button>
+        <button onclick="editor.bold()"><img src="/assets/link_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" id="link" alt="" onclick=""></button>
+        <button onclick="editor.bold()"><img src="/assets/format_align_left_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" id="align-left" alt="" onclick=""></button>
+        <button onclick="editor.bold()"><img src="/assets/format_align_center_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" id="align-center" alt="" onclick=""></button>
+        <button onclick="editor.bold()"><img src="/assets/format_align_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" id="align-right" alt="" onclick=""></button>
+        <p id="quote" onclick="">Quote</p>
+    </nav>
+    <main id="content">
+        <textarea placeholder="Digite seu texto aqui" maxlength="1200" type="text" id="text"></textarea>
+    </main>
+</div>
+</body>
+</html>
