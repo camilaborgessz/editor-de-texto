@@ -49,6 +49,7 @@ nav {
   font-weight: 500;
   color: #5f6368;
   font-size: 17px;
+  padding: 8px;
 }
 
 #quote {
@@ -70,7 +71,7 @@ nav {
 }
 
 #text:focus {
-  border: 2px solid transparent; /* Remove a borda ao focar */
+  border: 2px solid transparent;
   outline: none;
 }
 
@@ -89,4 +90,16 @@ button {
 
 .underlined {
   text-decoration: underline;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }

@@ -26,7 +26,27 @@ class Editor {
         else 
         conteudo?.classList.add('underlined')
     } 
+    
+    public alignLeft(text: number | string) {
+        if (conteudo?.classList.contains('align-left'))
+            conteudo?.classList.remove('align-left')
+        else 
+        conteudo?.classList.add('align-left')
+    } 
 
+    public alignCenter(text: number | string) {
+        if (conteudo?.classList.contains('align-center'))
+            conteudo?.classList.remove('align-center')
+        else 
+        conteudo?.classList.add('align-center')
+    } 
+    
+    public alignRight(text: number | string) {
+        if (conteudo?.classList.contains('align-right'))
+            conteudo?.classList.remove('align-right')
+        else 
+        conteudo?.classList.add('align-right')
+    } 
     
 }
 
